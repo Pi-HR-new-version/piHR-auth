@@ -7,7 +7,8 @@ const Login = () => {
   const [isToken, setToken] = useState();
   const navigate = useNavigate();
   const [queryParameters] = useSearchParams();
-  const returnUrl = `http://accounts.pisales.xyz/?returnUrl=http://localhost:5010`;
+  // const returnUrl = `http://accounts.pisales.xyz/?returnUrl=http://localhost:5010`;
+  const returnUrl = `http://accounts.pisales.xyz/?returnUrl=pi-hr-auth.vercel.app`;
   const authenticated = isAuthenticated();
 
   useEffect(() => {
