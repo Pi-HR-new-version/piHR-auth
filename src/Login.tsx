@@ -7,10 +7,9 @@ const Login = () => {
   const [isToken, setToken] = useState();
   const navigate = useNavigate();
   const [queryParameters] = useSearchParams();
-  // const returnUrl = `http://accounts.pisales.xyz/?returnUrl=http://localhost:5010`;
-  const returnUrl = `http://accounts.pisales.xyz/?returnUrl=pi-hr-auth.vercel.app`;
+  const returnUrl = `http://accounts.pisales.xyz/?returnUrl=${window.location.href}`;
   const authenticated = isAuthenticated();
-
+  // console.log();
   useEffect(() => {
     if (queryParameters.get("ack") as string) {
       const allData = JSON.parse(queryParameters.get("ack") as string);

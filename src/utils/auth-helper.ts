@@ -1,5 +1,5 @@
 import jwt_decode from "jwt-decode";
-import { getCookie } from "typescript-cookie";
+import { getCookie, removeCookie } from "typescript-cookie";
 
 export const getCurrentUser = () => {
   const token = getCookie("auth");
@@ -22,4 +22,8 @@ export const getAccessToken = () => {
 export const isAuthenticated = () => {
   const token: any = getCookie("auth");
   return !!token;
+};
+
+export const removeToken = () => {
+  removeCookie("auth");
 };

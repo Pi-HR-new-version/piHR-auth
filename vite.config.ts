@@ -13,8 +13,8 @@ export default defineConfig({
         navbar: "https://pihr-mf-navbar.vercel.app/assets/remoteEntry.js",
       },
       exposes: {
-        LoginPage: "./src/Login",
-        authHelpers: "./src/utils/auth-helper",
+        "./LoginPage": "./src/Login.tsx",
+        "./authHelpers": "./src/utils/auth-helper.ts",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
