@@ -26,7 +26,7 @@ const Login = () => {
     if (authenticated) {
       navigate("/dashboard");
     }
-  }, [authenticated]);
+  }, [authenticated, navigate]);
 
   return (
     <div>
@@ -43,7 +43,6 @@ const Login = () => {
         >
           <iframe
             src={returnUrl}
-            // src="http://accounts.pisales.xyz"
             title="login page"
             width="100%"
             height="100%"

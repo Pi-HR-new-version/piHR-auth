@@ -10,8 +10,7 @@ export default defineConfig({
       name: "auth",
       filename: "remoteEntry.js",
       remotes: {
-        navbar:
-          "https://remote-dy6bkq40j-raselhasan356s-projects.vercel.app/assets/remoteEntry.js",
+        navbar: "https://pihr-mf-navbar.vercel.app/assets/remoteEntry.js",
       },
       exposes: {
         LoginPage: "./src/Login",
